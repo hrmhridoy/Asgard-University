@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060d18"/>
+      <stop offset="50%" style="stop-color:#162338"/>
+      <stop offset="100%" style="stop-color:#060d18"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c9a227"/>
+      <stop offset="50%" style="stop-color:#7b5cff"/>
+      <stop offset="100%" style="stop-color:#2dd4bf"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="100" y="280" width="1000" height="4" fill="url(#gold)" opacity="0.6"/>
+  <text x="600" y="260" text-anchor="middle" font-family="Georgia, serif" font-size="56" fill="url(#gold)" font-weight="bold">Asgard University</text>
+  <text x="600" y="340" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#e8c547" letter-spacing="8">REALM OF KNOWLEDGE</text>
+  <text x="600" y="420" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#a8b0c4">Where Mortals Ascend to Mastery</text>
+</svg>
