@@ -45,13 +45,21 @@ function parsePost(filename: string): Post {
   };
 }
 
+function toMeta(post: Post): PostMeta {
+  return {
+    slug: post.slug,
+    title: post.title,
+    date: post.date,
+    excerpt: post.excerpt,
+    category: post.category,
+    author: post.author,
+    coverImage: post.coverImage,
+  };
+}
+
 export function getAllPosts(): PostMeta[] {
   return getMdxFiles()
-    .map((file) => {
-      const post = parsePost(file);
-      const { content: _, readingTime: __, ...meta } = post;
-      return meta;
-    })
+    .map((file) => toMeta(parsePost(file)))
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
 
